@@ -1,17 +1,37 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+// import PrimeiroComponente from './componentes/PrimeiroComponente';
+// import CompA, {CompB as B} from './componentes/DoisComponentes';
+// import MultElementos from './componentes/MultElementos';
+// import FamiliaOliveira from './componentes/FamiliaOliveira';
+// import Familia from './componentes/Familia';
+// import Membro from './componentes/Membro';
+// import CompoenteComFuncao from './componentes/ComponenteComFuncao';
+// import Pai from './componentes/Pai'
+// import ComponenteClasse from './componentes/ComponenteClasse';
+// import Contador from './componentes/Contador';
+import Hook from './componentes/Hook'
 
+
+const elemento = document.getElementById('root');
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+    <div>
+        {/* <MultElementos /> */}
+        {/* <PrimeiroComponente valor="Bom dia!" valor2={Math.pow(2, 8)}/> */}
+        {/* <CompA valor="valor A"/>
+        <B valor="valor B"/> */}
+        {/* <Familia sobrenome="Oliveira">
+            <Membro nome="Nathan" />
+        </Familia> */}
+        {/* <FamiliaOliveira sobrenome="Oliveira"/> */}
+        {/* <CompoenteComFuncao /> */}
+        {/* <Pai /> */}
+        {/* <ComponenteClasse valor="Sou um Componente de classe!"/> */}
+        {/* <Contador numeroInicial={0}/> */}
+        <Hook />
+    </div>
+, elemento);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+// const jsx = <h1>Olá React</h1>
+// ReactDOM.render(jsx, elemento);
